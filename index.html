@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="./css/clone-site.css">
+    <script src="https://kit.fontawesome.com/fbdfc0aa10.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Noto+Serif+KR&display=swap"
+        rel="stylesheet">
+    
+
+
+    
+    <title>clone-site</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+
+        <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+    <!-- clockAnd Today sectiong -->
+
+    <section class="container">
+        <h2 id="clock"> 00:00:00 </h2>
+        <h2 id="today"></h2>
+
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="이름을 입력해주세요." />
+            <!-- <input type="submit" value="입력"> -->
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+
+         
+        <form id="todo-form" class="hidden" >
+            <input type="text" placeholder="할일 목록을 입력해주세요." required>
+        </form>
+        <ul id="todo-list"></ul>
+
+    </section>
+
+
+
+
+ 
+
+
+    <footer>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 스크립트 영역 -->
+    <script src="/js/clone-site/greetings.js"></script>
+    <script src="/js/clone-site/clock.js"></script>
+    <script src="/js/clone-site/today.js"></script>
+    <script src="/js/clone-site/quotes.js"></script>
+    <script src="/js/clone-site/background.js"></script>
+    <script src="/js/clone-site/todo.js"></script>
+    <script src="/js/clone-site/weather.js"></script>
+</body>
+
+</html>

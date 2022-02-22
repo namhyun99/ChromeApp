@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    color : white;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* weather */
+
+#weather {
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+
+
+
+/* ClockAndToday */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#clock {
+    font-size: 150px;
+    font-weight: normal;
+}
+
+#today {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* container */
+
+.hidden {
+    display: none;
+}
+
+
+#login-form {
+    margin-top: 20px;
+}
+
+#login-form input {
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    text-align: center;
+}
+
+#login-form input::placeholder {
+    color: white;
+  }
+
+#greeting {
+    font-size: 30px;
+    color: white;
+}
+
+
+/* todo-form */
+
+#todo-form {
+    margin-top: 20px;
+}
+
+#todo-form input {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    text-align: center;
+}
+
+#todo-form input::placeholder {
+    color: white;
+}
+
+/* todo-list */
+
+#todo-list {
+    padding : 20px;
+}
+
+
+
+/* footer */
+
+#quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#quote span {
+    padding: 10px;
+    font-size: 12px;
+}
+
